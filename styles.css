@@ -1,0 +1,118 @@
+
+/************************ ELEMENTY ***************************/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  background: #f1f1f1;
+  background-image: url("wheat.png");
+  background-attachment: fixed;
+  text-align: justify;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+h2 {
+  color: #14274e;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+p {
+  color: #14274e;
+}
+
+/************************ KLASY ***************************/
+.card {
+   background: rgba(155,164,180,0.8);
+   padding: 20px;
+   margin-top: 20px;
+   border-radius: 10px;
+
+}
+.fav:before {
+  content: "✨ ";
+}
+.fav:after {
+  content: " ✨";
+}
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgba(155,164,180,0.8);
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: rgba(241,246,249,0.85);
+  border-radius: 25px;
+}
+.img {
+  background: rgba(155,164,180,0); /*nie rezygnujemy z paddingu*/
+  width: 100%;
+  padding: 20px;
+}
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+.leftcolumn2 {
+  float: left;
+  width: 25%;
+}
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+.rightcolumn2 {
+  float: left;
+  width: 75%;
+  padding-left: 20px;
+}
+.niebieski {
+  color: #14274e;
+}
+.video {
+  width: 100%;
+  padding: 20px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/************************ STANY ***************************/
+
+/* link */
+a:link {
+ color: #14274e;
+ text-decoration: none;
+}
+/* kliknięty link */
+a:visited {
+ color: #14274e;
+ text-decoration: none;
+}
+/* najechanie na link */
+a:hover {
+ color: hotpink;
+ text-decoration: none;
+}
+/* aktywny link */
+a:active {
+ color: #14274e;
+ text-decoration: none;
+}
+
+/* responsywny layout - jesli strona bd miec mniej niz 800px to kolumny z prawej zjadą na dół */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
